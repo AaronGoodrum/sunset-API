@@ -1,0 +1,7 @@
+{
+  "projects": {
+    "default": "sunset-rv",
+    "chat": "sunset-rv",
+    "sunset-rv": "sunset-rv"
+  }
+}

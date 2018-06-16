@@ -1,0 +1,84 @@
+<ion-header>
+  <ion-navbar color="primary">
+      <button ion-button menuToggle>
+          <ion-icon name="menu"></ion-icon>
+        </button>
+    <ion-title>RV Specials</ion-title>
+    <!-- <ion-buttons end> not working :()
+        <button ion-button icon-only (click)="dismiss()">
+          <ion-icon name="close"></ion-icon></button>
+        </ion-buttons>  -->
+    </ion-navbar>
+</ion-header>
+
+  <ion-content padding>
+    <ion-content>
+  
+      <h3>Specials</h3>
+
+
+
+      <!-- <ion-card>
+          <div class="card-title">Sunseeker</div>
+        <img src="assets/imgs/sunset.jpeg"/>
+        
+        <div class="card-subtitle">40 Listings</div>
+        
+      </ion-card> -->
+    
+    
+    <!-- <ion-list *ngFor="let specials of specialsList">
+
+      <ion-item>{{specials.id}} {{specials.specials}}
+
+      </ion-item>
+    </ion-list> -->
+
+    <!-- this card not showing -->
+     <!-- one rv--> 
+     <!-- <ion-card class="rvs-card" *ngIf="rvs">
+       <img src= {{rvs[0].urlToImage}} 
+       <img src="https://firebasesto...-84f6-d4b5cdb66019">
+       <ion-card-content>
+         <ion-card-title>
+           {{ rvs[0].title }}
+           </ion-card-title>
+         <p class="card-author">
+          By: {{ rvs[0].author }} 
+         </p>
+         <p class="card-author">
+           Source: {{ rvs[0].source.name }}
+         </p>
+         <p class="card-desc">
+           {{ rvs[0].description }}
+         </p>
+         <button ion-button>
+           <a href="{{ rvs[0].url }}">Read More</a>
+         </button>
+       </ion-card-content>
+     </ion-card> -->
+
+    <!-- Heart icon   -->
+     <!-- <ion-fab bottom right [hidden]="favorite">
+      <button ion-fab (click)="addToFavorites()">
+        <ion-icon name="heart-outline"></ion-icon>
+      </button>
+    </ion-fab>
+    <ion-fab bottom right *ngIf="favorite">
+      <button ion-fab>
+        <ion-icon name="heart"></ion-icon>
+      </button>
+    </ion-fab>  -->
+    <ion-fab right bottom>
+      <button ion-fab color="primary"><ion-icon name="add"></ion-icon></button>
+     <ion-fab-list side="left">
+      <button ion-fab><ion-icon name="heart-outline"></ion-icon></button>
+      <button ion-fab><ion-icon name="logo-facebook"></ion-icon></button>
+      <button ion-fab><ion-icon name="logo-share"></ion-icon></button>
+        </ion-fab-list>
+  </ion-fab>
+  <ion-fab left bottom >
+    <button ion-fab>Share</button>
+  </ion-fab>
+          
+</ion-content>
